@@ -2,7 +2,7 @@
 # Opacus-Synthetic-Tabular
 Opacus-Synthetic-Tabular is a tool for generating synthetic tabular data with differential privacy, leveraging Opacus for secure, privacy-preserving AI models.
 
-A good example is the [Titanic dataset from kaggle](https://www.kaggle.com/competitions/titanic "Titanic") . The project is structured into four main steps, outlined below.
+A great dataset for showcase is the [Titanic dataset from kaggle](https://www.kaggle.com/competitions/titanic "Titanic"). The project is structured into four main steps, outlined below.
 
 ## Steps Overview
 
@@ -28,25 +28,25 @@ pip install -r requirements.txt
     ```bash
     python preprocess_titanic.py
     ```
-Will generate titanic_processed.csv, titanic_processed_train.csv and titanic_processed_test.csv
+Will generate `titanic_processed.csv`, `titanic_processed_train.csv` and `titanic_processed_test.csv`.
 
 2. **Train the model with DP-SGD**:
     ```bash
     python train_with_DPSGD.py
     ```
-Uses titanic_processed_train.csv to train and save the model into models\\{experiment_name}_Epochs{epochs}_DPSGD_Epsilon{EPSILON}_{checkpoint}.pt
+Uses titanic_processed_train.csv to train and save the model into `models\{experiment_name}_Epochs{epochs}_DPSGD_Epsilon{EPSILON}_{checkpoint}.pt`.
 
 3. **Generate synthetic data**:
     ```bash
     python generate_synthetic_data.py
     ```
-Uses the saved model to generate synthetic data and saves it to synth_data_DP\\{experiment_name}_Samples{str(n_samples)}_Epsilon{str(EPSILON)}.csv
+Uses the saved model to generate synthetic data and saves it to `synth_data_DP\{experiment_name}_Samples{str(n_samples)}_Epsilon{str(EPSILON)}.csv`.
 
 4. **Test the synthetic data**:
     ```bash
     python titanic_test.py
     ```
-Uses the trained synthetic data to train a RandomForestClassifier and test it using titanic_processed_test.csv from step 1.
+Uses the trained synthetic data to train a RandomForestClassifier and test it using `titanic_processed_test.csv` from step 1.
 
 ## Inspiration
 
