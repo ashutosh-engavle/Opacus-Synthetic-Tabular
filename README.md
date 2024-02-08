@@ -2,7 +2,7 @@
 # Opacus-Synthetic-Tabular
 Opacus-Synthetic-Tabular is a tool for generating synthetic tabular data with differential privacy, leveraging Opacus for secure, privacy-preserving AI models.
 
-A great dataset for showcase is the [Titanic dataset from kaggle](https://www.kaggle.com/competitions/titanic "Titanic"). The project is structured into four main steps, outlined below.
+A great dataset for showcase is the [Titanic dataset from kaggle](https://www.kaggle.com/competitions/titanic). The project is structured into four main steps, outlined below.
 
 ## Steps Overview
 
