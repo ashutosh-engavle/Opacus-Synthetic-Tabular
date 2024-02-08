@@ -50,7 +50,7 @@ Uses the trained synthetic data to train a RandomForestClassifier and test it us
 
 ## Inspiration
 
-This project was inspired by the research paper titled "Language Models are Realistic Tabular Data Generators" by Vadim Borisov, Kathrin Sessler, Tobias Leemann, Martin Pawelczyk, Gjergji Kasneci, which explores the generation of synthetic data using GPT-2 models. The paper demonstrates the potential of GPT-2 in generating realistic datasets, serving as a foundational concept for our approach. However, our project extends the idea by incorporating differential privacy to enhance data privacy.
+This project was inspired by the research paper titled "Language Models are Realistic Tabular Data Generators" by Vadim Borisov, Kathrin Sessler, Tobias Leemann, Martin Pawelczyk, Gjergji Kasneci, which explores the generation of synthetic data using GPT-2 models. The paper demonstrates the potential of GPT-2 in generating realistic datasets, serving as a foundational concept for our approach. However, my project extends the idea by incorporating differential privacy to enhance data privacy.
 
 For more details, you can read the original paper here: [Language Models are Realistic Tabular Data Generators](https://openreview.net/forum?id=cEygmQNOeI).
 
