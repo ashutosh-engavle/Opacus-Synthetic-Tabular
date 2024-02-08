@@ -1,0 +1,9 @@
+datasets==2.15.0
+numpy==1.26.4
+opacus==1.4.0
+pandas==2.2.0
+py_synthpop==0.1.2
+scikit_learn==1.2.2
+torch==2.2.0
+tqdm==4.66.1
+transformers==4.30.2
